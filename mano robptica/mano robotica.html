@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEÑEXIA - Mano Mecánica</title>
+    <link rel="stylesheet"
+          href="estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>SEÑEXIA</h1>
+        <p>
+            Mano mecánica para facilitar
+            el aprendizaje del lenguaje de señas.
+        </p>
+        <hr>
+        <h2>Conexión Bluetooth</h2>
+        <button
+            class="bluetooth"
+            onclick="conectarBluetooth()">
+            CONECTAR BLUETOOTH
+        </button>
+        <p id="estadoArduino">
+            Bluetooth desconectado
+        </p>
+        <h2>Escribe una palabra</h2>
+        <input
+            type="text"
+            id="palabra"
+            placeholder="Ejemplo: HOLA">
+        <br>
+        <button
+            class="traducir"
+            onclick="traducir()">
+             TRADUCIR
+        </button>
+        <button
+            class="enviar"
+            onclick="enviarPalabra()">
+            ENVIAR PALABRA
+        </button>
+        <h2>Resultado</h2>
+        <div id="resultado">
+            Escribe una palabra.
+        </div>
+        <h2>Secuencia de señas</h2>
+        <div id="secuencia">
+        </div>
+        <h2>Simulación de la mano</h2>
+        <div class="mano">
+            ✋
+        </div>
+        <div class="dedos">
+            <div
+                class="dedo"
+                id="dedo1">
+            </div>
+            <div
+                class="dedo"
+                id="dedo2">
+            </div>
+            <div
+                class="dedo"
+                id="dedo3">
+            </div>
+            <div
+                class="dedo"
+                id="dedo4">
+            </div>
+            <div
+                class="dedo"
+                id="dedo5">
+            </div>
+        </div>
+        <h2>Selecciona una letra</h2>
+        <div class="letras">
+            <button onclick="enviarLetra('A')">A</button>
+            <button onclick="enviarLetra('B')">B</button>
+            <button onclick="enviarLetra('C')">C</button>
+            <button onclick="enviarLetra('D')">D</button>
+            <button onclick="enviarLetra('E')">E</button>
+            <br>
+            <button onclick="enviarLetra('F')">F</button>
+            <button onclick="enviarLetra('G')">G</button>
+            <button onclick="enviarLetra('H')">H</button>
+            <button onclick="enviarLetra('I')">I</button>
+            <button onclick="enviarLetra('J')">J</button>
+            <br>
+            <button onclick="enviarLetra('K')">K</button>
+            <button onclick="enviarLetra('L')">L</button>
+            <button onclick="enviarLetra('M')">M</button>
+            <button onclick="enviarLetra('N')">N</button>
+            <button onclick="enviarLetra('O')">O</button>
+            <br>
+            <button onclick="enviarLetra('P')">P</button>
+            <button onclick="enviarLetra('Q')">Q</button>
+            <button onclick="enviarLetra('R')">R</button>
+            <button onclick="enviarLetra('S')">S</button>
+            <button onclick="enviarLetra('T')">T</button>
+            <br>
+            <button onclick="enviarLetra('U')">U</button>
+            <button onclick="enviarLetra('V')">V</button>
+            <button onclick="enviarLetra('W')">W</button>
+            <button onclick="enviarLetra('X')">X</button>
+            <button onclick="enviarLetra('Y')">Y</button>
+            <button onclick="enviarLetra('Z')">Z</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
